@@ -2,11 +2,13 @@ name: Sync Fork
 
 on:
   pull_request:
-    branches:    
-      - main
+    types:
+      - labeled
+      - opened
+      - updated
       
 jobs:
-  sync:
+  automerge:
     runs-on: ubuntu-latest
     steps:
       - id: automerge
@@ -15,7 +17,3 @@ jobs:
         env:
           MERGE_LABELS: "sync"
           GITHUB_TOKEN: "${{ secrets.GH_TOKEN }}"
-      - name: feedback
-        if: steps.automerge.outputs.mergeResult == "merged"
-        run: |
-          echo "Pull request ${{ steps.automerge.outputs.pullRequestNumber }} merged!"
