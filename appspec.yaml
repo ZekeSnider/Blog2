@@ -1,0 +1,21 @@
+alerts:
+- rule: DEPLOYMENT_FAILED
+domains:
+- domain: zekesnider.com
+  type: PRIMARY
+- domain: zeke.dev
+  type: ALIAS
+  zone: zeke.dev
+name: zeke-blog
+region: sfo
+static_sites:
+- build_command: bundle exec jekyll build -d ./public
+  environment_slug: jekyll
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: ZekeSnider/Blog
+  name: blog
+  routes:
+  - path: /
+  source_dir: /

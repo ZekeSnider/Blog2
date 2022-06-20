@@ -1,0 +1,165 @@
+.site-header {
+	background-color: #2ECC40;
+	border-top: none;
+}
+
+#headerBackground {
+	max-height: 100px;
+
+	overflow:hidden;
+	display:block;
+}
+
+.site-title {
+	color:black;
+}
+
+.background-blur {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a.site-title {
+    text-decoration: none;
+    color: black;
+    font-weight:500;
+}
+
+span.caption {
+	display: table;
+	margin: 0 auto;
+	font-style: italic;
+	font-weight: 200;
+}
+
+.fullwidthimg {
+	width: 100%;
+}
+
+.notfullwidthimage {
+	display: block;
+	margin: auto;
+}
+
+.brand-icon {
+	width: 20px;
+	margin-right: 10px;
+}
+
+.post-link-h2 {
+	margin-bottom:0px;
+}
+
+span.post-meta {
+	margin-bottom: 15px;
+}
+
+.pagebannerimg {
+	width: 100%;
+}
+
+hr {
+	margin-bottom:20px;
+}
+
+.sidebyimagecontainer {
+	display: block;
+	/* position: absolute; */
+	margin-bottom:25px;
+}
+
+@media only screen and (min-width:700px){
+	.sidebyimagecontainer { 
+		margin-right:30px;
+		max-width: 50%;
+		float: left;
+	}
+}
+
+@media only screen and (max-width:700px){
+	.sidebyimagecontainer{
+		margin: auto;
+		width: 100%;
+	}
+	.sidebyimagecontainer {
+		margin-bottom:15px;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.page-content, .site-footer {
+		background-color: #1d1d1d;
+		color: #e6e6e6;
+	}
+
+	a:hover { 
+	    color: #0000ff;
+	    text-decoration: none;
+	}
+
+	.site-footer {
+		border-top: 1px solid #565656;
+	}
+	.site-header {
+		background-color: #217e4e;
+		border-bottom: 1px solid #565656;
+	}
+
+	.site-title, .site-title:visited {
+		color: #e6e6e6;
+	}
+
+	.site-title {
+		color: #1d1d1d;
+	}
+	.site-nav .page-link {
+		color: #d5dddd;
+	}
+
+	a:visited {
+		color: #6997cd;
+	}
+
+	.post-meta {
+		color: #a3a3a3;
+	}
+
+	p {
+		color:white;
+	}
+
+	pre {
+		background-color: #000033
+	}
+
+	.highlighter-rouge .highlight {
+		background-color: #000033
+	}
+
+	code {
+		background-color: #000033
+	}
+
+	html {
+		background-color: #1d1d1d;
+	}
+}
+
+.footer-p {
+	margin-bottom: 0px;
+}
+
+.large-post-date {
+	font-size: 30px;
+}
+
+blockquote {
+	font-weight: 200;
+}

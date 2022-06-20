@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Homekit"
+date:   2019-04-21 12:15:40 -0700
+categories: side-projects
+tags: []
+---
+
+I have little experience with hardware, 
+
+# The Equipment
++ [Raspberry Pi 3](https://www.amazon.com/gp/product/B07BDR5PDW/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07BDR5PDW&linkCode=as2&tag=zeke082-20&linkId=878ec655cdbf6a40bf226475b7c170d3)
+	+ Alternatively, you can use a [Raspberry Pi Zero](https://www.amazon.com/gp/product/B06XFZC3BX/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B06XFZC3BX&linkCode=as2&tag=zeke082-20&linkId=b2b6e81aae6b419ae2449eb99dce3a82) with a headboard soldered on (or solder directly)
++ [360 servo](https://www.amazon.com/gp/product/B07F9P32PF/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07F9P32PF&linkCode=as2&tag=zeke082-20&linkId=27ce384d7acc170d42d9cb6a80122fd6)
++ [Jumper wires](https://www.amazon.com/gp/product/B072L1XMJR/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B072L1XMJR&linkCode=as2&tag=zeke082-20&linkId=c85aa8e645e3a2830e4380c1ca382642)
++ [Wand grip](https://blindparts.com/product/vertical-blind-wand-grip/)
+
+(Note: the amazon links are affiliate links.)
+
+
+# The hardware
+{% include fullWidthImage.html file="originalBlinds.jpeg" description="unaltered blinds, with the rod and grip" %}
+
+The specifics will obviously differ based on what type of blinds you have. My blinds are twist blinds, which conveniently have a removable grip on the bottom of the rod, with has a hole on the bottom. I noticed this, and thought it would be perfect for screwing to a servo.
+
+{% include fullWidthImage.html file="screwdriver.jpeg" description="screwdriver with extension screwing grip to the servo" %}
+
+You'll need a screwdriver extension to properly screw into the servo through the grip. My extension was overkill on length, but got the job done.
+
+{% include fullWidthImage.html file="screwed.jpeg" description="servo screwed to blind rod, but not attached to wall" %}
+
+I attached the grip back onto the blind rod, and we're almost good to go. Except I needed to attach it to the wall, and still have the flexibility to remove it in case I need to manually slide the blinds. I'm also renting so I didn't want to screw into the wall.
+
+{% include fullWidthImage.html file="commandstrips.jpeg" description="cut command strips to connect the servo to the wall" %}
+
+{% include fullWidthImage.html file="attached.jpeg" description="servo attached to wall" %}
+
+
+# The software

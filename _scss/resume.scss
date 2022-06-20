@@ -1,0 +1,155 @@
+$highlight-color: #00A388;
+
+.company-icon {
+	width: 45px;
+	margin-right: 10px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.company-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-items: baseline;
+}
+
+h2.company-title {
+	margin-bottom: 0px;
+	font-size: 15pt;
+	margin-bottom: 5px;
+	align-self: center;
+}
+
+h3.job-title {
+	margin-bottom: 2px;
+	font-size: 12pt;
+	font-weight: 200;
+}
+
+h1.resume-heading {
+	color: #00A388;
+	font-size: 24pt;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+
+.resume-heading-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	align-items: baseline;
+}
+
+.job-title-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.resume-heading-line {
+	content:' ';
+    display:block;
+    border: 1px solid grey;
+    flex-grow: 8;
+    margin-left: 5px;
+}
+
+.zeke-title {
+	font-weight: 200;
+}
+
+.name-title {
+	font-size: 50px;
+	margin-bottom: 0px;
+	line-height: 0px;
+}
+
+.software-engineer {
+	color: $highlight-color;
+}
+
+.right-align-flex {
+	margin-left: auto;
+}
+
+.company-location {
+	@extend .right-align-flex;
+	font-style: italic;
+	align-self: center;
+	color: $highlight-color;
+}
+
+.job-title-date {
+	@extend .right-align-flex;
+	font-style: italic;
+	font-size: 10pt;
+	color: gray;
+}
+
+.download-button {
+	@extend .right-align-flex;
+	font-size: 12pt;
+	background-color: $highlight-color;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    align-self: end;
+
+    a:visited, a, a:hover {
+		color:white;
+		text-decoration: none;
+	}
+	display: none;
+}
+
+.my-location {
+	color: gray;
+	font-style: italic;
+}
+
+.resume-heading-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-spacer {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.resume-date {
+	p {
+		color: gray;
+		text-align: right;
+	}
+}
+
+.name-container {
+	font-size: 35pt;
+}
+
+#top-resume-header {
+	line-height: 10px;
+}
+
+@media print {
+	.download-button {
+		display: none;
+	}
+	.company-icon {
+		display: none;
+	}
+	.experience-content {
+		line-height: 18px;
+		font-size: 10pt;
+	}
+}
+
+@media only screen and (max-width:400px){
+	.contact-spacer {
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+}
