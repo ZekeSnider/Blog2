@@ -5,7 +5,7 @@ on:
     types:
       - labeled
       - opened
-      - updated
+      - edited
       
 jobs:
   automerge:
